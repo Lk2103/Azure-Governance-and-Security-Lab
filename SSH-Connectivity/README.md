@@ -18,7 +18,7 @@ Image taken from: https://www.geeksforgeeks.org/devops/rsa-vs-ed25519-which-key-
 
 It is important to remember that RSA still can be used due to its compatibility with older systems.
 
-In this case there was only option for public SSH key but, you can also produce a Private key in some cases, the difference being is that anyone can access the VM with the public key as long as they have it private key is used to decrypt the messages provided by the public key.
+The public key is stored on the virtual machine, while the private key remains secure on my local machine. When I attempt to connect, my private key is used to prove my identity. The VM checks it against the stored public key. If they match access is granted. Important to know that public keys are stored on the virtual machine and are under authorised keys, you cannot get into a virtual machine solely with a public key
 
 <img width="1356" height="545" alt="image" src="https://github.com/user-attachments/assets/173da2a4-5031-44cd-88a3-1ac5500beb67" />
 
@@ -32,9 +32,9 @@ Using ssh and private key that azure let me download when the deployment of the 
 
 <img width="1424" height="322" alt="image" src="https://github.com/user-attachments/assets/d43e0a6b-bad7-41f5-b079-a9ddeeecfc8e" />
 
-Azure refers to pairs this means that when this is deployed there is a public and private key which is developed
+Azure refers to pairs this means that when this is deployed there is a public and private key which is developed public which stays on the virtual machine and then private keys which are given to the user once developed and downloaded ot their local machine but ARE NOT STORED ON AZURE 
 
 
 <img width="1919" height="841" alt="image" src="https://github.com/user-attachments/assets/d4b47081-abfc-4454-94e5-737b19d2c241" />
 
-Connection via public domain showing that everyone can access
+Connection via azure shell
