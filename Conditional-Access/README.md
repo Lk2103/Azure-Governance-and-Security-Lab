@@ -13,3 +13,6 @@ I then logged in as Lee using the credentials I had setup for them
 The image above shows that Lee can see the VM1 but has no permissions to even access the vm as show by the image below.
 
 <img width="1913" height="822" alt="image" src="https://github.com/user-attachments/assets/25db2091-6f3f-4eed-ad89-f6911be0fcd5" />
+
+
+I could further improve this and give a conditional access policy, this would mean I would be able to control the lcoation in which the user logged in from or block thme completely from accessing Azure portal or Insist on MFA. Unfortunately I was unable to do this due to my current subscription limitations with azure.
