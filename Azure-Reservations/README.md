@@ -12,7 +12,7 @@ Using the pricing calculator provided by Azure.Below shows how much it would cos
 
 This then saves £500 for the month if 3 years were reserved
 
-<img width="865" height="484" alt="image" src="https://github.com/user-attachments/assets/7e02086f-3b61-4a0e-bc60-bf65619db1ae" />
+<img width="837" height="556" alt="image" src="https://github.com/user-attachments/assets/fa64c446-7b3c-4eb9-ad4c-8b285a202289" />
 
-
+This looks like a lof money upfront but, this is a standard SQL database limit.
 
