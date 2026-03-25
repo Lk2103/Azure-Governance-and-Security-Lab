@@ -19,4 +19,12 @@ this command however did not work due to more needing to be installed and so i u
 
 <img width="1582" height="487" alt="image" src="https://github.com/user-attachments/assets/52c3eb06-8e69-4a69-8a60-3b8517dbda93" />
 
+To connect to the lkvm2 also known as the **target** virtual machine I would need the public ip address. There are various ways of gaining this public IP address i chose to the following command on the target Virtul machine console:
 
+curl -s https://icahnazip.com
+
+Obviously if I was to do this without accessing the other computer this would require other networking tools.
+
+<img width="932" height="245" alt="image" src="https://github.com/user-attachments/assets/398f6c6d-f685-4e90-9c05-66b0936f8238" />
+
+using ssh protocol
