@@ -14,15 +14,11 @@ Kurbentes is designed to automate the deployment, scaling, and management of app
 
 - Git Bash installed on local machine
 
+Once these were all installed we could move on to the next step
 
-I firsted needed to login on Git Bash
 
+Before starting anything azure it is important that I create a small application that can then be deployed and managed I chose to use AI(as this was not the purpose of this demo) to assist me in prodcuing this Time management app. I used Javascript to create the app, I also required a "package" in JSON format to specify the required tools so the application can run correctly.
 
-Before starting anything azure it is important that I create a small application that can then be deployed and managed
-
-I then installed azure CLI
-
-<img width="939" height="625" alt="image" src="https://github.com/user-attachments/assets/e0889057-421e-407c-a3c5-c870e19e2867" />
 
 Using "az login" I can then login via git bash
 
@@ -30,7 +26,7 @@ Using "az login" I can then login via git bash
 
 I then proceeded with the login prompt through microsoft (needed to specify using --tenant and include myu tenant ID)
 
-next was to create a resource group that the AKS cluster can then go into
+Next was to create a resource group that the AKS cluster can then go into
 
 <img width="744" height="92" alt="image" src="https://github.com/user-attachments/assets/632ec221-b72d-48e0-b268-7aac8ff2b277" />
 
@@ -38,7 +34,26 @@ I can then create an aks(Azure Kurbernetes service) cluster assigned within the 
 
 <img width="410" height="144" alt="image" src="https://github.com/user-attachments/assets/3f9f0907-345b-4bac-ad86-1af328a7c9f4" />
 
+I then needed to connect kubectl to AKS, this is done by requesting credentials and simply specifying where the AKS is located(what resource group) and then specifiy the name of the cluster
 
+I then checked the connection via the following command
+
+kubectl get nodes
+
+The next step was to the create an Azure container registry this was done by using the following command:
+
+az acr create 
+--resource-group kubernetes1 
+--name k8acr 
+--sku Basic
+
+Assigning console to the folder that locally contained my app file, package file and my docker file allowed me to then build the docker image within the current directory one thing to ntoe that I did not know before was the "." at the end of this command specifies that the file is within the current directory.
+
+Below shows the building of the Docker image, now this is built I will now push it to the Azure Container Registry.
+
+<img width="1108" height="480" alt="image" src="https://github.com/user-attachments/assets/b4062cc8-45f4-423b-8d51-1caa201d71e3" />
+
+<img width="1051" height="291" alt="image" src="https://github.com/user-attachments/assets/bb45335c-5138-407e-a7c9-b4dcbc765039" />
 
 **Issues encountered**
 
