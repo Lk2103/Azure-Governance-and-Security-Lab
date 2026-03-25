@@ -27,4 +27,6 @@ Obviously if I was to do this without accessing the other computer this would re
 
 <img width="932" height="245" alt="image" src="https://github.com/user-attachments/assets/398f6c6d-f685-4e90-9c05-66b0936f8238" />
 
-using ssh protocol
+using ssh protocol I was able to access the **target** Virtual machine from the separate network created for the **attacker** virtual machine. This shows that no secruity measures are in place to access the lkvm2/target virtual machine.
+
+<img width="1840" height="704" alt="image" src="https://github.com/user-attachments/assets/df3fb051-d335-4edc-8f03-54fa953b9e54" />
