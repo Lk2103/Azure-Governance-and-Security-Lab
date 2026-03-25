@@ -30,3 +30,22 @@ Obviously if I was to do this without accessing the other computer this would re
 using ssh protocol I was able to access the **target** Virtual machine from the separate network created for the **attacker** virtual machine. This shows that no secruity measures are in place to access the lkvm2/target virtual machine.
 
 <img width="1840" height="704" alt="image" src="https://github.com/user-attachments/assets/df3fb051-d335-4edc-8f03-54fa953b9e54" />
+
+this shows the vunerability of a machine on a network with no firewall enabled as well as no Network Security Group rules in place to prevent outside computers from accessing resources.
+
+below shows the addition of a inbound security rule being added for this machine, this will denty any SSH connections to the machine, this could obviously be adjusted to only allow one virtual machine outside of the network to be able to connect to this, this would be ideal in situations where an employee requires to work remotely.
+
+As you can see there are two other protocols allowed which can be deleted or adjusted to only allow access by specified IP addresses.
+
+<img width="1919" height="785" alt="image" src="https://github.com/user-attachments/assets/47e6123f-f98d-42cb-bdf3-c44ddc13a213" />
+
+<img width="830" height="367" alt="image" src="https://github.com/user-attachments/assets/9582f0ce-616e-435f-b6c5-bbf8eb05fc70" />
+
+The firewall built into the ubuntu operating system can be enabled using ufw enable command as shown below
+
+<img width="1919" height="713" alt="image" src="https://github.com/user-attachments/assets/3a23b55b-caf9-48d5-a081-5c4de59cf1df" />
+
+In addition fail2ban is another application that can be installed, this automatically blocks repeated login attempts and provides real time protection to the virtual machine.
+
+After this as best practice like all other projects i deleted all resources involved including virtual networks and volumes created alongside the virtual machines.
+
