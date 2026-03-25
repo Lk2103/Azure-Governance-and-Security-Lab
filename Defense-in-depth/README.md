@@ -39,8 +39,6 @@ As you can see there are two other protocols allowed which can be deleted or adj
 
 <img width="1919" height="785" alt="image" src="https://github.com/user-attachments/assets/47e6123f-f98d-42cb-bdf3-c44ddc13a213" />
 
-<img width="830" height="367" alt="image" src="https://github.com/user-attachments/assets/9582f0ce-616e-435f-b6c5-bbf8eb05fc70" />
-
 The firewall built into the ubuntu operating system can be enabled using ufw enable command as shown below
 
 <img width="1919" height="713" alt="image" src="https://github.com/user-attachments/assets/3a23b55b-caf9-48d5-a081-5c4de59cf1df" />
