@@ -55,6 +55,9 @@ Below shows the building of the Docker image, now this is built I will now push 
 
 <img width="1051" height="291" alt="image" src="https://github.com/user-attachments/assets/bb45335c-5138-407e-a7c9-b4dcbc765039" />
 
+it was important that I also created a deployment.yaml file, in this file it specifies all required data and gathers data suhc as the docker image to run the app. Below shows an image of the file which was created with the help of AI. the section where the command is "kind" specifies deployment which manages the pods included.
+
+Pods are the smallest form of deployment. they can containe one or more containers. A deployment ensures that the
 **Issues encountered**
 
 When prodcuing the AKS on Azure CLI an error was dsiplayed showing that there was a resource provider that had not be registered, going into azure and then into the subscription section allowed me to regsiter this to allow this service to be created
