@@ -57,7 +57,16 @@ Below shows the building of the Docker image, now this is built I will now push 
 
 it was important that I also created a deployment.yaml file, in this file it specifies all required data and gathers data suhc as the docker image to run the app. Below shows an image of the file which was created with the help of AI. the section where the command is "kind" specifies deployment which manages the pods included.
 
-Pods are the smallest form of deployment. they can containe one or more containers. A deployment ensures that the
+Pods are the smallest form of deployment. They can contain one or more containers. A deployment ensures that the correct up to date pods are used.
+
+it is important ot note that K8 is an abbreviation for kubernetes.
+
+<img width="931" height="800" alt="image" src="https://github.com/user-attachments/assets/a020d8f1-37a5-4a55-8710-5e2423cc8b05" />
+*Screenshot of kuberenetes deployment.yaml file*
+
+This file essentially tells Kubernetes what image to use.
+
+
 **Issues encountered**
 
 When prodcuing the AKS on Azure CLI an error was dsiplayed showing that there was a resource provider that had not be registered, going into azure and then into the subscription section allowed me to regsiter this to allow this service to be created
